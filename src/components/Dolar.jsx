@@ -4,7 +4,7 @@ import "./Dolar.css";
 
 const Dolar = ({oficial, blue, turista,bolsa}) => {
 
-    if(turista.compra == "No Cotiza"){
+    if(turista.compra === "No Cotiza"){
         turista.compra = "-"
     }
   

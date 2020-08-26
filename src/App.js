@@ -1,5 +1,6 @@
 import React, { Fragment, useState, useEffect } from 'react';
-import Dolar from './components/Dolar'
+import Dolar from './components/Dolar';
+import NavBar from './components/NavBar';
 import './App.css'
 
 function App() {
@@ -53,6 +54,7 @@ function App() {
   
   return (
     <Fragment>
+      <NavBar />
       <main id="contenido">
         <Dolar 
           oficial={oficial}
