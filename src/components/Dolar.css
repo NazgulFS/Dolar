@@ -1,0 +1,7 @@
+.list-group-flush>.list-group-item {
+    background-color: transparent;
+    padding: 0px 0px 0px 0px
+}
+h5 {
+    text-transform: uppercase;
+}
