@@ -125,7 +125,7 @@ const Dolar = ({oficial, blue, turista,bolsa}) => {
                             </ListGroup>
                         </Card.Body>
                         <Card.Footer className="text-center">
-                            <span>Variación: {bolsa.variacion}</span>
+                            <span> Variación: {bolsa.variacion}</span>
                         </Card.Footer>
                     </Card>
                 </CardDeck>
