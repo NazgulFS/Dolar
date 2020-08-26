@@ -38,6 +38,96 @@ const Dolar = ({oficial, blue, turista}) => {
                             <span>Variación: {oficial.variacion}</span>
                         </Card.Footer>
                     </Card>
+                    <Card 
+                        bg="primary"
+                        className="dolarOficial"
+                        text="white"
+                    >
+                        <Card.Header>
+                            <h5>{blue.nombre}</h5>
+                        </Card.Header>
+                        <Card.Body 
+                            bg="primary"
+                        >
+                            <ListGroup variant="flush" className="text-center">
+                                <ListGroup.Item>
+                                    <Row>
+                                        <Col >
+                                            <h6>Compra</h6>
+                                            <h3>{blue.compra} </h3>
+                                        </Col>
+                                        <Col>
+                                            <h6>Venta</h6>
+                                            <h3>{blue.venta}</h3>
+                                        </Col>
+                                    </Row>
+                                </ListGroup.Item>
+                            </ListGroup>
+                        </Card.Body>
+                        <Card.Footer className="text-center">
+                            <span>Variación: {blue.variacion}</span>
+                        </Card.Footer>
+                    </Card>
+                    <Card 
+                        bg="secondary"
+                        className="dolarOficial"
+                        text="white"
+                    >
+                        <Card.Header>
+                            <h5>{oficial.nombre}</h5>
+                        </Card.Header>
+                        <Card.Body 
+                            bg="secondary"
+                        >
+                            <ListGroup variant="flush" className="text-center">
+                                <ListGroup.Item>
+                                    <Row>
+                                        <Col >
+                                            <h6>Compra</h6>
+                                            <h3>{oficial.compra} </h3>
+                                        </Col>
+                                        <Col>
+                                            <h6>Venta</h6>
+                                            <h3>{oficial.venta}</h3>
+                                        </Col>
+                                    </Row>
+                                </ListGroup.Item>
+                            </ListGroup>
+                        </Card.Body>
+                        <Card.Footer className="text-center">
+                            <span>Variación: {oficial.variacion}</span>
+                        </Card.Footer>
+                    </Card>
+                                        <Card 
+                        bg="secondary"
+                        className="dolarOficial"
+                        text="white"
+                    >
+                        <Card.Header>
+                            <h5>{oficial.nombre}</h5>
+                        </Card.Header>
+                        <Card.Body 
+                            bg="secondary"
+                        >
+                            <ListGroup variant="flush" className="text-center">
+                                <ListGroup.Item>
+                                    <Row>
+                                        <Col >
+                                            <h6>Compra</h6>
+                                            <h3>{oficial.compra} </h3>
+                                        </Col>
+                                        <Col>
+                                            <h6>Venta</h6>
+                                            <h3>{oficial.venta}</h3>
+                                        </Col>
+                                    </Row>
+                                </ListGroup.Item>
+                            </ListGroup>
+                        </Card.Body>
+                        <Card.Footer className="text-center">
+                            <span>Variación: {oficial.variacion}</span>
+                        </Card.Footer>
+                    </Card>
                 </CardColumns>
             </Container>
         </Fragment>
