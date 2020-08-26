@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import { Container, Row, Col, Card, ListGroup, CardColumns } from 'react-bootstrap';
 import "./Dolar.css";
 
-const Dolar = ({oficial, blue, turista}) => {
+const Dolar = ({oficial, blue, turista,bolsa}) => {
   
     return ( 
         <Fragment>
