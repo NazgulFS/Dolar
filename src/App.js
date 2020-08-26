@@ -1,25 +1,57 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment, useState, useEffect } from 'react';
+import Dolar from './components/Dolar'
+import './App.css'
 
 function App() {
+
+  // State de dolar
+  const [dolares, guardarDolar] = useState([]);
+
+  // State tipos de dolar
+  const [oficial, actualizarOficial] = useState({
+    nombre:'',
+    compra:'',
+    venta:'',
+    variacion:''
+  });
+
+  const [blue, actualizarBlue] = useState({
+    nombre:'',
+    compra:'',
+    venta:'',
+    variacion:''
+  });
+
+  const [turista, actualizarTurista] = useState({
+    nombre:'',
+    compra:'',
+    venta:'',
+    variacion:''
+  });
+  
+  const consultarAPI = async () => {
+    const api = await fetch('https://www.dolarsi.com/api/api.php?type=valoresprincipales')
+    const dolares = await api.json();
+    guardarDolar(dolares);
+    actualizarOficial(dolares[0].casa);
+    actualizarBlue(dolares[1].casa);
+    actualizarTurista(dolares[6].casa);
+  }
+
+  // Cargar dolares
+  useEffect( () => {
+    consultarAPI();
+  }, [])
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <h1 className="title">COTIZACIÓN DEL DOLAR</h1>
+      <Dolar 
+        oficial={oficial}
+        blue={blue}
+        turista={turista} 
+      />
+    </Fragment>
   );
 }
 
