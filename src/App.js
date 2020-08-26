@@ -28,6 +28,13 @@ function App() {
     venta:'',
     variacion:''
   });
+
+  const [bolsa, actualizarBolsa] = useState({
+    nombre:'',
+    compra:'',
+    venta:'',
+    variacion:''
+  });
   
   const consultarAPI = async () => {
     const api = await fetch('https://www.dolarsi.com/api/api.php?type=valoresprincipales')
@@ -36,6 +43,7 @@ function App() {
     actualizarOficial(dolares[0].casa);
     actualizarBlue(dolares[1].casa);
     actualizarTurista(dolares[6].casa);
+    actualizarBolsa(dolares[4].casa);
   }
 
   // Cargar dolares
@@ -50,6 +58,7 @@ function App() {
           oficial={oficial}
           blue={blue}
           turista={turista} 
+          bolsa={bolsa}
         />
       </main>
     </Fragment>
