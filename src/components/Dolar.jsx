@@ -13,7 +13,9 @@ const Dolar = ({oficial, blue, turista}) => {
                         className="dolarOficial"
                         text="white"
                     >
-                        <Card.Header> <h5>{oficial.nombre}</h5></Card.Header>
+                        <Card.Header>
+                            <h5>{oficial.nombre}</h5>
+                        </Card.Header>
                         <Card.Body 
                             bg="success"
                         >

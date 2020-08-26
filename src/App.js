@@ -45,12 +45,13 @@ function App() {
   
   return (
     <Fragment>
-      <h1 className="title">COTIZACIÓN DEL DOLAR</h1>
-      <Dolar 
-        oficial={oficial}
-        blue={blue}
-        turista={turista} 
-      />
+      <main id="contenido">
+        <Dolar 
+          oficial={oficial}
+          blue={blue}
+          turista={turista} 
+        />
+      </main>
     </Fragment>
   );
 }
