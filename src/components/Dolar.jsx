@@ -3,6 +3,10 @@ import { Container, Row, Col, Card, ListGroup, CardDeck } from 'react-bootstrap'
 import "./Dolar.css";
 
 const Dolar = ({oficial, blue, turista,bolsa}) => {
+
+    if(turista.compra == "No Cotiza"){
+        turista.compra = "-"
+    }
   
     return ( 
         <Fragment>
@@ -114,7 +118,7 @@ const Dolar = ({oficial, blue, turista,bolsa}) => {
                                     <Row>
                                         <Col >
                                             <h6>Compra</h6>
-                                            <h3>{bolsa.compra} </h3>
+                                            <h4>{bolsa.compra} </h4>
                                         </Col>
                                         <Col>
                                             <h6>Venta</h6>
