@@ -10,19 +10,15 @@ const NavBar = () => {
             <Nav className="mr-auto">
             <Nav.Link href="#features">Dolar</Nav.Link>
             <Nav.Link href="#pricing">Cripto</Nav.Link>
-            <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+            <NavDropdown title="Desplegable" id="collasible-nav-dropdown">
+                <NavDropdown.Item href="#action/3.1">Seccion 1</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2">Seccion 2</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.3">Seccion 3</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.4">Seccion 4</NavDropdown.Item>
             </NavDropdown>
             </Nav>
             <Nav>
-            <Nav.Link href="#deets">More deets</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
-                Dank memes
-            </Nav.Link>
             </Nav>
         </Navbar.Collapse>
         </Navbar>
