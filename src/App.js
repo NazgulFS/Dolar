@@ -46,17 +46,17 @@ function App() {
     const res = await fetch(url)
     const noticias = await res.json();
     guardarNoticias(noticias.articles);
-    console.log(noticias.articles)
 }
 
   // API Cripto
   const consultarCripto = async () => {
-    let url = 
+    
   }
 
   useEffect( () => {
     consultarAPI();
     consultarNoticias();
+    consultarCripto();
   }, [])
   
   return (
