@@ -1,4 +1,4 @@
-import React, {Fragment,useState, useEffect} from 'react'
+import React, {Fragment} from 'react'
 import { Container, CardDeck, Card } from 'react-bootstrap';
 import "./noticias.css"
 
