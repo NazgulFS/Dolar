@@ -1,4 +1,4 @@
-import React, {Fragment,useState, useEffect} from 'react'
+import React, {Fragment} from 'react'
 import { Container, CardDeck, Card } from 'react-bootstrap';
 
 const Noticias = ({noticias}) => {
@@ -9,16 +9,16 @@ const Noticias = ({noticias}) => {
             <Container>
                 <CardDeck>
                 {noticias.slice(0, 4).map(noticia => (
-                     <Card>
-                        <Card.Img key={noticia.url} variant="top" src={noticia.urlToImage} />
-                        <Card.Header key={noticia.url}>
+                     <Card key={noticia.url}>
+                        <Card.Img variant="top" src={noticia.urlToImage} />
+                        <Card.Header>
                          <h6>{noticia.title}</h6>
                         </Card.Header>
                      <Card.Body>
                          <p key={noticia.url}>{noticia.title}</p>
                      </Card.Body>
                      <Card.Footer className="text-center">
-                         <span key={noticia.url}> Fuente: {noticia.author}</span>
+                         <span> Fuente: {noticia.author}</span>
                      </Card.Footer>
                  </Card>
                 ))}
