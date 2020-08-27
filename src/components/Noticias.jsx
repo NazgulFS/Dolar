@@ -10,15 +10,15 @@ const Noticias = ({noticias}) => {
                 <CardDeck>
                 {noticias.slice(0, 4).map(noticia => (
                      <Card>
-                        <Card.Img variant="top" src="{noticia.urlToImage}" />
-                     {/* <Card.Header>
+                        <Card.Img key={noticia.url} variant="top" src={noticia.urlToImage} />
+                        <Card.Header key={noticia.url}>
                          <h6>{noticia.title}</h6>
-                     </Card.Header> */}
+                        </Card.Header>
                      <Card.Body>
-                         <p>{noticia.title}</p>
+                         <p key={noticia.url}>{noticia.title}</p>
                      </Card.Body>
                      <Card.Footer className="text-center">
-                         <span> Fuente: {noticia.author}</span>
+                         <span key={noticia.url}> Fuente: {noticia.author}</span>
                      </Card.Footer>
                  </Card>
                 ))}
