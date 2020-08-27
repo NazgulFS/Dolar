@@ -1,23 +1,30 @@
-import React, { Fragment } from 'react';
-import { Container, Card, CardDeck } from 'react-bootstrap';
-import "./Noticias.css";
+import React, {Fragment,useState, useEffect} from 'react'
+import { Container, CardDeck, Card } from 'react-bootstrap';
 
-const Noticias = (noticias) => {
+const Noticias = ({noticias}) => {
 
-    console.log(noticias.noticias.articles)
-
+    
     return ( 
-        <Container>
-            <CardDeck id="noticiasDOM">
-                <ul>
-                {noticias.noticias.articles.map((articles) => {
-                    return(
-                        <li>{articles.author}</li>
-                    )
-                })}
-                </ul>
-            </CardDeck>
-        </Container>
+        <Fragment>
+            <Container>
+                <CardDeck>
+                {noticias.slice(0, 4).map(noticia => (
+                     <Card>
+                        <Card.Img variant="top" src="{noticia.urlToImage}" />
+                     {/* <Card.Header>
+                         <h6>{noticia.title}</h6>
+                     </Card.Header> */}
+                     <Card.Body>
+                         <p>{noticia.title}</p>
+                     </Card.Body>
+                     <Card.Footer className="text-center">
+                         <span> Fuente: {noticia.author}</span>
+                     </Card.Footer>
+                 </Card>
+                ))}
+                </CardDeck>
+            </Container>
+        </Fragment>
      );
 }
  
