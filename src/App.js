@@ -2,6 +2,7 @@ import React, { Fragment, useState, useEffect } from 'react';
 import Dolar from './components/Dolar';
 import NavBar from './components/NavBar';
 import Noticias from './components/Noticias';
+import Cripto from './components/Cripto';
 import { Container } from "react-bootstrap";
 import './App.css'
 
@@ -27,7 +28,7 @@ function App() {
 
   });
   
-  // Api dolar
+  // API dolar
   const consultarAPI = async () => {
     const api = await fetch('https://www.dolarsi.com/api/api.php?type=valoresprincipales')
     const dolares = await api.json();
@@ -38,9 +39,9 @@ function App() {
     actualizarBolsa(dolares[4].casa);
   }
 
-  // APi Noticias
+  // API Noticias
   const consultarNoticias = async () => {
-    const url = 'http://newsapi.org/v2/top-headlines?country=ar&category=business&apiKey=7dc87c1a282a4cd68740956a1e7bc760'
+    let url = 'http://newsapi.org/v2/top-headlines?country=ar&category=business&apiKey=7dc87c1a282a4cd68740956a1e7bc760'
 
     const res = await fetch(url)
     const noticias = await res.json();
@@ -48,7 +49,11 @@ function App() {
     console.log(noticias.articles)
 }
 
-  // Cargar dolares
+  // API Cripto
+  const consultarCripto = async () => {
+    let url = 
+  }
+
   useEffect( () => {
     consultarAPI();
     consultarNoticias();
@@ -58,6 +63,7 @@ function App() {
     <Fragment>
       <NavBar />
       <Container>
+        <Cripto />
         <Dolar 
           oficial={oficial}
           blue={blue}
