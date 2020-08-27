@@ -1,5 +1,6 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import Dolar from './components/Dolar'
+import Noticias from './components/Noticias';
 import './App.css'
 
 function App() {
@@ -51,6 +52,7 @@ function App() {
         blue={blue}
         turista={turista} 
       />
+      <Noticias />
     </Fragment>
   );
 }
