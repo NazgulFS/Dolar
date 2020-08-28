@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react'
-import { Container, CardDeck, Card } from 'react-bootstrap';
+import { Container, CardColumns, Card } from 'react-bootstrap';
 import "./Noticias.css";
 
 
@@ -8,8 +8,8 @@ const Noticias = ({ noticias }) => {
         <Fragment>
             <Container>
                 <h5 className="header">NOTICIAS</h5>
-                <CardDeck className="noticias">
-                    {noticias.slice(0, 4).map(noticia => (
+                <CardColumns className="noticias">
+                    {noticias.slice(0, 6).map(noticia => (
                         <Card  key={noticia.url}>
                             <Card.Img variant="top" src={noticia.urlToImage} />
                             <Card.Body>
@@ -18,7 +18,7 @@ const Noticias = ({ noticias }) => {
                             </Card.Body>
                         </Card>
                     ))}
-                </CardDeck>
+                </CardColumns>
             </Container>
         </Fragment>
     );
