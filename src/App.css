@@ -41,27 +41,7 @@
   align-items: center;
   justify-content: space-around;
 }
-.titulo-noticia {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 2; /* number of lines to show */
-  -webkit-box-orient: vertical;
-}
-.contenido-noticia {
-  font-size: 14px;
-  line-height: 16px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 4; /* number of lines to show */
-  -webkit-box-orient: vertical;
-}
-.fuente-noticia {
-  text-align: end;
-  font-size: 12px;
-  margin-bottom: 0px;
-}
+
 p {
   margin-bottom: 10px;
 }
