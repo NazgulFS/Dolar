@@ -11,14 +11,14 @@ const Dolar = ({oficial, blue, turista,bolsa}) => {
     return ( 
         <Fragment>
             <Container>
-                <CardDeck>
+                <CardDeck id="deckNoticias">
                     <Card 
                         bg="success"
                         className="dolarOficial"
                         text="white"
                     >
                         <Card.Header>
-                            <h5>{oficial.nombre}</h5>
+                            <h5 className="titulo-moneda">{oficial.nombre}</h5>
                         </Card.Header>
                         <Card.Body 
                             bg="success"
@@ -39,16 +39,16 @@ const Dolar = ({oficial, blue, turista,bolsa}) => {
                             </ListGroup>
                         </Card.Body>
                         <Card.Footer className="text-center">
-                            <span>Variación: {oficial.variacion}</span>
+                            <span className="monedas-variacion">Variación: {oficial.variacion}%</span>
                         </Card.Footer>
                     </Card>
                     <Card 
                         bg="primary"
-                        className="dolarOficial"
+                        className="dolarBlue"
                         text="white"
                     >
                         <Card.Header>
-                            <h5>{blue.nombre}</h5>
+                            <h5 className="titulo-moneda">{blue.nombre}</h5>
                         </Card.Header>
                         <Card.Body 
                             bg="primary"
@@ -69,16 +69,16 @@ const Dolar = ({oficial, blue, turista,bolsa}) => {
                             </ListGroup>
                         </Card.Body>
                         <Card.Footer className="text-center">
-                            <span>Variación: {blue.variacion}</span>
+                            <span className="monedas-variacion">Variación: {blue.variacion}%</span>
                         </Card.Footer>
                     </Card>
                     <Card 
                         bg="warning"
-                        className="dolarOficial"
+                        className="dolarTurista"
                         text="white"
                     >
                         <Card.Header>
-                            <h5>{turista.nombre}</h5>
+                            <h5 className="titulo-moneda">{turista.nombre}</h5>
                         </Card.Header>
                         <Card.Body 
                             bg="warning"
@@ -99,16 +99,16 @@ const Dolar = ({oficial, blue, turista,bolsa}) => {
                             </ListGroup>
                         </Card.Body>
                         <Card.Footer className="text-center">
-                            <span>Variación: {turista.variacion}</span>
+                            <span className="monedas-variacion">Variación: {turista.variacion}%</span>
                         </Card.Footer>
                     </Card>
                     <Card 
                         bg="secondary"
-                        className="dolarOficial"
+                        className="dolarBolsa"
                         text="white"
                     >
                         <Card.Header>
-                            <h5>{bolsa.nombre}</h5>
+                            <h5 className="titulo-moneda">{bolsa.nombre}</h5>
                         </Card.Header>
                         <Card.Body 
                             bg="secondary"
@@ -129,7 +129,7 @@ const Dolar = ({oficial, blue, turista,bolsa}) => {
                             </ListGroup>
                         </Card.Body>
                         <Card.Footer className="text-center">
-                            <span> Variación: {bolsa.variacion}</span>
+                            <span className="monedas-variacion"> Variación: {bolsa.variacion}%</span>
                         </Card.Footer>
                     </Card>
                 </CardDeck>

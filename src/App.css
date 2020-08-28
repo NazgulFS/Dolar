@@ -1,3 +1,6 @@
+body {
+  background-color: white;
+}
 .App {
   text-align: center;
 }
@@ -41,10 +44,10 @@
   align-items: center;
   justify-content: space-around;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 52a12fa0d074992c5f6c8823a475d0fa3428870b
 p {
   margin-bottom: 10px;
-}
-.card-img, .card-img-bottom, .card-img-top {
-  height: 140px;
 }
