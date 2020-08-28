@@ -1,8 +1,28 @@
-.list-group-flush>.list-group-item {
-    background-color: transparent;
-    padding: 0px 0px 0px 0px
+.list-group-flush > .list-group-item {
+  background-color: transparent;
+  padding: 0px 0px 0px 0px;
 }
-h5 {
-    text-transform: uppercase;
-    text-align: center;
+.titulo-moneda {
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  font-size: 1rem;
+}
+.dolarOficial {
+    background-image: linear-gradient(to bottom, #0ba360 0%, #3cba92 100%);
+}
+.dolarBlue {
+    background-image: linear-gradient(to bottom, #3f659c 0%, #4d77ca 100%);
+}
+.dolarTurista {
+    background-image: linear-gradient(to bottom, #e04646c4 0%, #dd7c6d 100%);
+}
+.dolarBolsa {
+    background-image: linear-gradient(to bottom, #7c7c7c 0%, #9c9c9c 100%);
+}
+#deckNoticias {
+  margin-top: 20px;
+}
+.card-footer {
+  padding: 5px 0px 5px 0px;
+  font-size: 0.9rem;
 }

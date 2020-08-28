@@ -63,7 +63,6 @@ function App() {
     <Fragment>
       <NavBar />
       <Container>
-        <Cripto />
         <Dolar 
           oficial={oficial}
           blue={blue}

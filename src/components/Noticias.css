@@ -5,7 +5,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-line-clamp: 3; /* number of lines to show */
     -webkit-box-orient: vertical;
   }
   .contenido-noticia {
@@ -14,11 +14,22 @@
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 4; /* number of lines to show */
+    -webkit-line-clamp: 3; /* number of lines to show */
     -webkit-box-orient: vertical;
   }
   .fuente-noticia {
     text-align: end;
     font-size: 12px;
     margin-bottom: 0px;
+  }
+  a {
+    color: #444;
+  }
+  a:hover {
+    color: #111;
+    text-decoration: none;
+  }
+ .header {
+    margin-top: 1rem;
+    text-align: start;
   }
