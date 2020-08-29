@@ -47,7 +47,6 @@ function App() {
     });
     const crypto = await cryp.json();
     guardarCrypto(crypto);
-    console.log(crypto)
   }
 
   useEffect( () => {

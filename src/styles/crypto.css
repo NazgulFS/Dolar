@@ -1,0 +1,9 @@
+.container{
+    width: fit-content;
+    font-size: x-small;
+    background: #fff;
+    
+}
+.list-group{
+    border-radius: 2px;
+}
