@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { Container, Row, Col, Card, ListGroup, CardDeck } from 'react-bootstrap';
-import "./Dolar.css";
+import '../styles/Dolar.css';
 
 const Dolar = ({oficial, blue, turista,bolsa}) => {
 

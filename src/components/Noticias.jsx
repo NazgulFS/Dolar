@@ -1,13 +1,13 @@
 import React, {Fragment} from 'react'
-import { Container, CardColumns, Card } from 'react-bootstrap';
-import "./Noticias.css";
+import { Container, CardColumns, Card} from 'react-bootstrap';
+import "../styles/Noticias.css";
 
 
 const Noticias = ({ noticias }) => {
     return (
         <Fragment>
             <Container>
-                <h5 className="header">NOTICIAS</h5>
+            <h5 className="header">NOTICIAS</h5>
                 <CardColumns className="noticias">
                     {noticias.slice(0, 6).map(noticia => (
                         <Card  key={noticia.url}>

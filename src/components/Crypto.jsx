@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Cripto = () => {
+const Cripto = ({crypto}) => {
     return ( 
         <div>CriptoMonedas</div>
      );
