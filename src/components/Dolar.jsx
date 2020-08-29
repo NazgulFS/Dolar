@@ -6,6 +6,8 @@ const Dolar = ({oficial, blue, turista,bolsa}) => {
 
     if(turista.compra === "No Cotiza"){
         turista.compra = "-"
+    } else if (turista.variacion === "No Cotiza"){
+        turista.variacion = "-"
     }
   
     return ( 
