@@ -9,7 +9,7 @@ const Noticias = ({ noticias }) => {
             <Container>
                 <h5 className="header">NOTICIAS</h5>
                 <CardColumns className="noticias">
-                    {noticias.slice(0, 6).map(noticia => (
+                    {noticias.slice(0, 8).map(noticia => (
                         <Card  key={noticia.url}>
                             <Card.Img variant="top" src={noticia.urlToImage} />
                             <Card.Body>
