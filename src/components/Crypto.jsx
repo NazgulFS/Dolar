@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 
-const Cripto = ({crypto}) => {
+const Crypto = ({crypto}) => {
     return ( 
+        <Fragment>
         <div>CriptoMonedas</div>
+            
+        </Fragment>
      );
 }
- 
-export default Cripto;
+    
+export default Crypto;

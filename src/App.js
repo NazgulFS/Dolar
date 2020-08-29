@@ -40,20 +40,20 @@ function App() {
 }
 
   // API CRYPTO
-  const consultarCripto = async () => {
-    let url = 'https://rest.coinapi.io/v1/exchanges';
+  const consultarCrypto = async () => {
+    let url = 'https://rest.coinapi.io/v1/symbols';
     const cryp = await fetch(url,{
-      header: "X-CoinAPI-Key: 73034021-THIS-IS-SAMPLE-KEY"
+      "headers": {'X-CoinAPI-Key': '8762B3D4-0BD0-4E75-B619-51D59763938D'}
     });
     const crypto = await cryp.json();
     guardarCrypto(crypto);
-    console.log(crypto);
+    console.log(crypto)
   }
 
   useEffect( () => {
     consultarAPI();
     consultarNoticias();
-    consultarCripto();
+    consultarCrypto();
   }, [])
   
   return (
