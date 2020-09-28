@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/NazgulFS/Dolar/static/css/main.eadf2f12.chunk.css",
+    "main.js": "/NazgulFS/Dolar/static/js/main.71e63b18.chunk.js",
+    "main.js.map": "/NazgulFS/Dolar/static/js/main.71e63b18.chunk.js.map",
+    "runtime-main.js": "/NazgulFS/Dolar/static/js/runtime-main.97ca1d6f.js",
+    "runtime-main.js.map": "/NazgulFS/Dolar/static/js/runtime-main.97ca1d6f.js.map",
+    "static/css/2.11829350.chunk.css": "/NazgulFS/Dolar/static/css/2.11829350.chunk.css",
+    "static/js/2.5dbd70b3.chunk.js": "/NazgulFS/Dolar/static/js/2.5dbd70b3.chunk.js",
+    "static/js/2.5dbd70b3.chunk.js.map": "/NazgulFS/Dolar/static/js/2.5dbd70b3.chunk.js.map",
+    "index.html": "/NazgulFS/Dolar/index.html",
+    "precache-manifest.fb7412d8434ebe90c28e3ab24150e0b3.js": "/NazgulFS/Dolar/precache-manifest.fb7412d8434ebe90c28e3ab24150e0b3.js",
+    "service-worker.js": "/NazgulFS/Dolar/service-worker.js",
+    "static/css/2.11829350.chunk.css.map": "/NazgulFS/Dolar/static/css/2.11829350.chunk.css.map",
+    "static/css/main.eadf2f12.chunk.css.map": "/NazgulFS/Dolar/static/css/main.eadf2f12.chunk.css.map",
+    "static/js/2.5dbd70b3.chunk.js.LICENSE.txt": "/NazgulFS/Dolar/static/js/2.5dbd70b3.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.97ca1d6f.js",
+    "static/css/2.11829350.chunk.css",
+    "static/js/2.5dbd70b3.chunk.js",
+    "static/css/main.eadf2f12.chunk.css",
+    "static/js/main.71e63b18.chunk.js"
+  ]
+}
