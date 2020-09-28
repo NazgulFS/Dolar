@@ -3,7 +3,7 @@
 The aplications contains information about the dolar cotization in Argentina and news related to the economy.
 
 ## API information:
--Cotization: https://www.dolarsi.com/api/api.php?type=valoresprincipales
+Cotization: https://www.dolarsi.com/api/api.php?type=valoresprincipales <br />
 -News: http://newsapi.org/v2/top-headlines?country=ar&category=business&apiKey=7dc87c1a282a4cd68740956a1e7bc760
 
 
