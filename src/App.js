@@ -2,7 +2,6 @@ import React, { Fragment, useState, useEffect } from 'react';
 import Dolar from './components/Dolar';
 import NavBar from './components/NavBar';
 import Noticias from './components/Noticias';
-import Crypto  from './components/Crypto'
 import { Container } from "react-bootstrap";
 import './App.css'
 
@@ -10,9 +9,6 @@ function App() {
 
   // State Noticias
   const [noticias, guardarNoticias] = useState([]);
-
-  // State Crypto
-  const [crypto, guardarCrypto] = useState([]);
 
   // State tipos de dolar
   const [oficial, actualizarOficial] = useState({});
@@ -39,20 +35,10 @@ function App() {
     guardarNoticias(noticias.articles);
 }
 
-  // API CRYPTO
-  const consultarCrypto = async () => {
-    let url = 'https://rest.coinapi.io/v1/symbols';
-    const cryp = await fetch(url,{
-      "headers": {'X-CoinAPI-Key': '8762B3D4-0BD0-4E75-B619-51D59763938D'}
-    });
-    const crypto = await cryp.json();
-    guardarCrypto(crypto);
-  }
 
   useEffect( () => {
     consultarAPI();
     consultarNoticias();
-    consultarCrypto();
   }, [])
   
   return (
@@ -67,9 +53,6 @@ function App() {
         />
         <Noticias 
           noticias={noticias}
-        />
-        <Crypto 
-          crypto={crypto}
         />
       </Container>
     </Fragment>

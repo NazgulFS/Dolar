@@ -6,7 +6,7 @@ import "../styles/Noticias.css";
 const Noticias = ({ noticias }) => {
     return (
         <Fragment>
-            <Container>
+            <Container className="mt-5">
             <h5 className="header">NOTICIAS</h5>
                 <CardColumns className="noticias">
                     {noticias.slice(0, 8).map(noticia => (
